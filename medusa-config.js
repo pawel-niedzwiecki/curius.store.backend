@@ -36,6 +36,9 @@ const DATABASE_URL =
 // Medusa uses Redis, so this needs configuration as well
 const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
 
+// COOKIE SECRET
+const COOKIE_SECRET = process.env.COOKIE_SECRET || "your-cookie-secret-token";
+
 // JWT SECRET
 const JWT_SECRET = process.env.JWT_SECRET || "your-jwt-secret-token";
 
@@ -48,8 +51,10 @@ module.exports = {
     database_url: DATABASE_URL,
     database_type: "postgres",
     jwt_secret: JWT_SECRET,
+    cookie_secret: COOKIE_SECRET,
     admin_cors: ADMIN_CORS,
     store_cors: STORE_CORS,
+
     database_extra:
       process.env.NODE_ENV !== "development"
         ? { ssl: { rejectUnauthorized: false } }
