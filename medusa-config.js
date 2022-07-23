@@ -39,7 +39,7 @@ const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
 // COOKIE SECRET
 const COOKIE_SECRET = process.env.COOKIE_SECRET || "your-cookie-secret-token";
 
-// JWT SECRET
+// jwt secret
 const JWT_SECRET = process.env.JWT_SECRET || "your-jwt-secret-token";
 
 // This is the place to include plugins. See API documentation for a thorough guide on plugins.
