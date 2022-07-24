@@ -36,10 +36,10 @@ const DATABASE_URL =
 // Medusa uses Redis, so this needs configuration as well
 const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
 
-// COOKIE SECRET
+// Cookie secret
 const COOKIE_SECRET = process.env.COOKIE_SECRET || "your-cookie-secret-token";
 
-// jwt secret
+// Jwt secret
 const JWT_SECRET = process.env.JWT_SECRET || "your-jwt-secret-token";
 
 // This is the place to include plugins. See API documentation for a thorough guide on plugins.
